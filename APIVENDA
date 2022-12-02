@@ -1,0 +1,27 @@
+from flask import request, Flask
+
+app = Flask(_name_)
+
+@app.route('/Venda', methods = ['POST'])
+def reserva():
+    data = 'Venda Realizada!'
+    return data
+
+@app.route('/procura-venda', methods = ['GET'])
+def busca_venda():
+    data = 'Venda ja realizada!'
+    return data
+
+@app.route('/altera-venda', methods = ['PUT'])
+def altera_venda():
+    data = 'A venda foi alterada!'
+    return data
+
+@app.route('/excluir-venda', methods = ['DELETE'])
+def excluir_venda():
+    data = 'A venda foi cancelada!'
+    return data
+
+
+if _name_ == '_main_':
+    app.run(debug = True)
